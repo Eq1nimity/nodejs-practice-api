@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Practice project to learn how to make node.js API",
   "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eq1nimity/nodejs-practice-api.git"
@@ -13,6 +16,9 @@
     "body-parser": "^1.18.3",
     "express": "^4.13.3",
     "mongodb": "^3.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
   },
   "bugs": {
     "url": "https://github.com/eq1nimity/nodejs-practice-api/issues"

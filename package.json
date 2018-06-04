@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-practice-api",
+  "version": "1.0.0",
+  "description": "Practice project to learn how to make node.js API",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eq1nimity/nodejs-practice-api.git"
+  },
+  "author": "Eq1nimity",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.13.3",
+    "mongodb": "^3.0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/eq1nimity/nodejs-practice-api/issues"
+  },
+  "homepage": "https://github.com/eq1nimity/nodejs-practice-api#readme"
+}

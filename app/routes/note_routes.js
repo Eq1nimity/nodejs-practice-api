@@ -18,6 +18,20 @@ module.exports = function(app, database) {
     });
   });
 
+  // Update
+  app.put('/notes/:id', (req, res) => {
+    const id = req.params.id;
+    const details = { '_id': new ObjectID(id) };
+    const note = { text: req.body };
+    db.collection('notes').update(details, note, (err, result) => {
+      if (err) {
+          res.send({'error':'An error has occurred'});
+      } else {
+          res.send(note);
+      }
+    });
+  });
+
   // Create
   app.post('/notes', (req, res) => {
     const note = { playerData: req.body };
